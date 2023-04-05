@@ -6,7 +6,7 @@ namespace EmployeeWageComputationProblem_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Enter 0 for welcome program \n Enter 1 for UC1 \n Enter 2 for UC2 \n Enter 3 for UC3");
+            Console.WriteLine(" Enter 0 for welcome program \n Enter 1 for UC1 \n Enter 2 for UC2 \n Enter 3 for UC3 \n Enter for UC3");
             int option = Convert.ToInt32(Console.ReadLine());
             Random random = new Random();
             switch (option)
@@ -26,6 +26,10 @@ namespace EmployeeWageComputationProblem_1
                 case 3:
                     int empCheck3 = random.Next(0, 3);
                     EmployeeWadgeUC3.EmployeeUC3(empCheck3);
+                    break;
+                case 4:
+                    int empCheck4 = random.Next(0, 3);
+                    EmployeeWadgeUC4.EmployeeUC4(empCheck4);
                     break;
                 default:
                     Console.WriteLine("Please Input Correct option");
